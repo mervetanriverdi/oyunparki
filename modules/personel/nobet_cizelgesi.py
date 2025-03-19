@@ -14,5 +14,5 @@ class NobetCizelgesi:
         if gun in self.nobet_gunleri:
             self.nobet_gunleri.remove(gun)
 
-     def __str__(self):
+    def __str__(self):
         return f"{self.personel_adi} {self.soyadi} - Nöbet Günleri: {', '.join(self.nobet_gunleri)}"
