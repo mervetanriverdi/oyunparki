@@ -5,7 +5,7 @@ class Personel:
         self.pozisyon = pozisyon
 
     def maas_hesapla(self):
- if self.pozisyon.lower() == "müşteri destek":
+        if self.pozisyon.lower() == "müşteri destek":
             return 20000
         elif self.pozisyon.lower() == "oyun bakım":
             return 22000
