@@ -5,6 +5,7 @@ from modules.muhasebe.kar_zarar import hesapla_kar_giderler
 from modules.personel.izin_yonetimi import IzinYonetimi
 from modules.personel.maas_hesaplama import Personel
 from modules.personel.nobet_cizelgesi import NobetCizelgesi
+from binis import Binis
 
 if __name__ == "__main__":
     kartno = int(input("Kart numaranızı girin: "))
@@ -30,3 +31,8 @@ if __name__ == "__main__":
 
     kar = hesapla_kar_giderler(100000, 45000)
     print("Net Kar:", kar)
+
+    binis_sistemi=Binis()
+    binis_sistemi.Binisverisi()
+    binis_sistemi.DosyadanOkuma()
+
