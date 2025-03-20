@@ -14,6 +14,10 @@ if __name__ == "__main__":
     giris_sistemi = Giris(kart)
     giris_sistemi.giris()
 
+    binis_sistemi = Binis()
+    binis_sistemi.Binisverisi()
+    binis_sistemi.DosyadanOkuma()
+
     personel = Personel("Ahmet", "Yılmaz", "müşteri destek")
     print(personel)
 
@@ -31,8 +35,3 @@ if __name__ == "__main__":
 
     kar = hesapla_kar_giderler(100000, 45000)
     print("Net Kar:", kar)
-
-    binis_sistemi=Binis()
-    binis_sistemi.Binisverisi()
-    binis_sistemi.DosyadanOkuma()
-
