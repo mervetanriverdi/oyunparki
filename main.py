@@ -5,13 +5,16 @@ from modules.muhasebe.kar_zarar import hesapla_kar_giderler
 from modules.personel.izin_yonetimi import IzinYonetimi
 from modules.personel.maas_hesaplama import Personel
 from modules.personel.nobet_cizelgesi import NobetCizelgesi
-
+from binis import Binis
 if __name__ == "__main__":
     kartno = int(input("Kart numaranızı girin: "))
     sure = int(input("Kart süresini girin (saat): "))
     kart = Kart(kartno, sure)
     giris_sistemi = Giris(kart)
     giris_sistemi.giris()
+    binis_sistemi=Binis()
+    binis_sistemi.Binisverisi()
+    binis_sistemi.DosyadanOkuma()
 
     personel = Personel("Ahmet", "Yılmaz", "müşteri destek")
     print(personel)
